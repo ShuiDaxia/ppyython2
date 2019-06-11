@@ -1,6 +1,5 @@
 # ppyython2
-continue learning...
-python学习提炼（基于《python学习手册》第四版）
+python学习提炼（基于《python学习手册》第四版---起始于第四部分函数）
 ==========
 
 （md之前写了好长一段手贱碰到关机键了。。。）
