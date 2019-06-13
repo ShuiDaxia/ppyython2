@@ -224,6 +224,8 @@ def tester(start):
 
 使用该嵌套作用域引用时，多次调用上边的tester，就会获得tester(0)的多个副本，每次返回nested的时候都会产生新的state值，state这个值每次是会记录的，当我们创建tester(1)的时候，就又会获得新的tester(1)的副本。
 
+这里切记用nonlocal的变量一定要先被赋值。
+
 
 
 
