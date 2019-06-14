@@ -254,6 +254,12 @@ func(*args)
 
 感觉就像是倒放。
 
+关键字参数keyword-only：def func(a,* b,c)，如果这样写，参数c必须接收关键字参数传递，即例如func(1,2,c = 3)
+
+又或者这样def func(a, * ,b,c),使用的时候要这样写func(1,b = 2,c = 3)。
+
+再或者这样，加入默认值def func(a,* ,b = 'cxk',c = 'rap')，使用的时候就这样func(1)完事了，就可以自动唱跳rap。。。
+
 
 
 
