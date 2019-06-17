@@ -326,13 +326,13 @@ def minmax(test,* args):
 
 ....return res
 
-def min(x,y):return x > y
+def min1(x,y):return x > y
 
-print(minmax(min,[1,2,3,4,5]))
+print(minmax(min1,[1,2,3,4,5]))
 
 这就是函数的多态和参数的灵活性的应用，当我们需要求max的时候，仅需要改动min函数就可以了，原来的minmax函数可以保持完整性。
 
-
+其实到这里通过上边这里例子我想到了map这个函数，有一丝丝的相似性，看看之后会不会提到。
 
 
 
