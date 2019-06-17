@@ -334,6 +334,54 @@ print(minmax(min1,[1,2,3,4,5]))
 
 其实到这里通过上边这里例子我想到了map这个函数，有一丝丝的相似性，看看之后会不会提到。
 
+接着循序渐进，来看更为有实际真实的例子：如果我们要求任意序列的公共部分或者出现过的所有元素，即交集和并集。
+
+交集：
+
+def intersect(* args):
+
+....res = []
+
+....for x in args[0]:
+
+........for other in args[1:]:
+
+............if x not in other: break
+
+........else:
+
+............res.append(x)
+
+....return res
+
+并集
+
+def union(* args):
+
+....res = []
+
+....for seq in args:
+
+........for x in seq:
+
+............if x not in res:
+
+................res.append(x)
+
+....return res
+
+细细品味....
+
+
+
+
+
+
+
+
+
+
+
 
 
 
