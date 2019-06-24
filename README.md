@@ -464,7 +464,26 @@ lambda的主体是一个单个的表达式，而不是一个代码块。但依�
 
 lambda的直接作用就是函数速写，不需要声明def变量，要不其它语言会叫匿名呢。
 
-map,filter,reduce
+map,filter,reduce,operator,functools等这些扩展了解，不做详细记录
+---
+
+重回迭代和解析
+---
+
+列表解析与map
+
+res = list(map(ord,'spam'))
+
+res = list([ord(x) for x in 'spam'])
+
+以上两种解析效果是一样的，map把一个函数映射遍一个序列，列表解析把一个表达式映射遍一个序列。
+
+
+
+
+
+
+
 
 
 
