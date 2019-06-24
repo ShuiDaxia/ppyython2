@@ -478,33 +478,33 @@ res = list([ord(x) for x in 'spam'])
 
 以上两种解析效果是一样的，map把一个函数映射遍一个序列，列表解析把一个表达式映射遍一个序列。
 
-如果稍微复杂一点
+如果稍微复杂一点：
 
 res = list(map(lambda x:x ** 2,range(10)))
 
 res = [x ** 2 for x in range(10)]
 
-当没有现成函数的时候，形式上列表解析还是要比map写的代码要少
+当没有现成函数的时候，形式上列表解析还是要比map写的代码要少。
 
 res = list(filter(lambda x:x % 2 == 0,range(10)))
 
 res = [x for x in range(10) if x % 2 == 0]
 
-这么看，列表解析能干不少活
+这么看，列表解析能干不少活。
+
+再来个故意的：
+
+res = list(map((lambda x:x ** 2),filter((lambda x:x % 2 == 0),range(10))))
+
+res = [x ** 2 for x in range(10) if x % 2 == 0]
+
+这样从形式和理解上列表解析都更加易懂，如果硬要杠的话，那就是filter部分可以直接写成[0,2,4,6,8,10]不更方便，确实，但如果是range(100)就不方便了。
 
 
+想起了之前的九九乘法表，列表解析可以做到一行搞定
 
 
-
-
-
-
-
-
-
-
-
-
+列表解析和矩阵
 
 
 
